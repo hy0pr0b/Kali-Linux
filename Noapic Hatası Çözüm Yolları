@@ -1,0 +1,15 @@
+[ 6.0076381..MP-BIOS bug: 8254 timer not connected to IO-APIC [ 7.0209811 Kernel panic not syncing: IO-APIC + timer doesn't work!
+Boot with apic=debug and send a report. Then try booting with the 'noapic' option
+
+
+--- HATASINI DÜZELTMEK İÇİN YAPILMASI GEREKENLER ---
+
+1-) Ayarlar -> Sistem -> Anakart  kısmına gelerek G/Ç APIC'i etkinleştirilmiş olduğundan emin olun
+2-) Ayarlar -> Sistem -> İşlemci PAE/NX'in etkinleştirildiğinden emin olun 
+
+Eğer bu şekilde hala aynı hata alınıyorsa;
+1-) VirtualBox başlatılırken esc ye basarak boot menüsüne gelin 
+2-) Çıkan seneçeklerden kernel 2.6.24-16-generic kısmında e tuşuna basınız 
+3-) Daha sonra çıkan ekrandan root ve server-root kısımlarına noapic yazısını ekleyin
+4-) Eklemelerden sonra root üzerine gelerek b tuşuna basalım (boot için)
+
