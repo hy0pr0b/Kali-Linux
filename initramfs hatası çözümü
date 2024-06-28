@@ -1,0 +1,5 @@
+1-) Açılan terminal ekranı üzerinden blkid yazılarak bilgiler alınır  (buradan hangi sda'da root bulunduğunu buluruz)
+
+2-) fsck /dev/sda1 -y komutunu girilir
+
+3-) reboot komutunu kullanırız (eğer reboot işe yaramazsa  reboot -f kullanılarak zorla uygulayabilirsiniz) 
